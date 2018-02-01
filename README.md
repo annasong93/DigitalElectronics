@@ -11,6 +11,7 @@ It is a light detect sensor. This sensor is very small and easy to carry out but
 
 
 Interesting Arduino Project
+
 Awake
 https://www.hackster.io/sofia-aronov/awake-f2cedc
 
