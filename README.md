@@ -10,6 +10,7 @@ Photocells:
 It is a light detect sensor. This sensor is very small and easy to carry out but it does have downside that each sensor varies a lot. The difference is up to 50%. So it is not very good to use for a precise measure in light change.
 
 
+
 Interesting Arduino Project
 
 Awake
