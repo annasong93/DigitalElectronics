@@ -19,6 +19,10 @@ Awake is an interactive arduino project. It makes a painting alive by using cond
 
 
 # Week 3
-Project 1
+## Project 1: Led Bracelet
+### IDEA
 
-Led Bracelet
+My idea is to make led light respond to music. It will detect the beat and blink with the beat and change color with it. I want to make it a bracelet as a decoration.
+
+Here is the sketch:
+
