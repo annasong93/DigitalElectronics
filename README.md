@@ -36,8 +36,8 @@ Components and sensor:
 2. Sensor: Parallax sound impact sensor
 
 ### some other addon ideas
-1. Light control LED
-Put a light sensor in to detect light. The led on the bracelet only light up when surrounding light is below certain darkness. Ohter wise it won't light up even it hear sounds.
+1.Light control LED 
+Put a light sensor in to detect light. The led on the bracelet only light up when surrounding light is below certain darkness. Otherwise, it won't light up even it hear sounds.
 
-2. Color
-Led color is controled by vibration sensor. When the sensor detect more vibration the color will vary.
+Color 
+2.Led color is controlled by the vibration sensor. When the sensor detects more vibration the color will vary.
