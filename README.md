@@ -26,3 +26,4 @@ My idea is to make led light respond to music. It will detect the beat and blink
 
 Here is the sketch:
 
+![8b779585-ebce-4ef2-85e7-1d95111a8be0](https://user-images.githubusercontent.com/35709830/35965250-20e8a4b0-0c6f-11e8-8880-0cfb33363a65.jpg)
