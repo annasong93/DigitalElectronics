@@ -43,3 +43,7 @@ Put a light sensor in to detect light. The led on the bracelet only light up whe
 2. Color 
 
 Led color is controlled by the vibration sensor. When the sensor detects more vibration the color will vary.
+
+1. make it 
+2. do it
+3. crash it
