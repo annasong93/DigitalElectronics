@@ -41,9 +41,4 @@ Components and sensor:
 Put a light sensor in to detect light. The led on the bracelet only light up when surrounding light is below certain darkness. Otherwise, it won't light up even it hear sounds. 
 
 2. Color 
-
 Led color is controlled by the vibration sensor. When the sensor detects more vibration the color will vary.
-
-1. make it 
-2. do it
-3. crash it
