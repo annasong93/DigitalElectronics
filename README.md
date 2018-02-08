@@ -19,6 +19,6 @@ Awake is an interactive arduino project. It makes a painting alive by using cond
 
 
 # Week 3
-# Project 1
-#
+Project 1
+
 Led Bracelet
