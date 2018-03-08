@@ -67,7 +67,7 @@ Sound Sensor
 
 I want to use:
  * 9 leds with different set of color. 
- *Sparkfun Sound Detector
+ * Sparkfun Sound Detector
 
 
 This is how it look like.
