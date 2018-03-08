@@ -72,8 +72,13 @@ I want to use:
 
 Here is the schematic
 
+![diagram](https://user-images.githubusercontent.com/35709830/37174263-daa3d6b0-22ca-11e8-8743-2acf3cc14cab.jpg)
+
 
 This is how it look like.
 ![enlight88](https://user-images.githubusercontent.com/35709830/37172528-e3a51008-22c5-11e8-8ee7-a03c68305331.JPG)
+
+
+Video:
 
 
