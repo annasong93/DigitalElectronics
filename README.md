@@ -76,9 +76,16 @@ Here is the schematic
 
 
 This is how it look like.
+
 ![enlight88](https://user-images.githubusercontent.com/35709830/37172528-e3a51008-22c5-11e8-8ee7-a03c68305331.JPG)
 
 
 Video:
 
 
+### Future steps
+The next project I want to develop deeper based on current one. The concept not only a wearble device shows lights react to music, but also have color change with surronding like Chameleons. So I will build a glove with color sensor in front and lights around arms. When I touch an object, the color of my arm will change to that and reflect to the sound change.
+
+* change to rgb led.
+* Add color sensor it change the color of the led when it sense color nearby.
+* build it in cloth make it wearble. 
