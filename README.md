@@ -51,6 +51,16 @@ First I need a sound sensor and led to test when the sensor sence sound led can 
 Search online for resources. I find this video using Sound Sensor Detection Module LM393 Chip
 https://www.youtube.com/watch?v=setjiVH0_IY
 
+<img width="768" alt="screen shot 2018-03-08 at 10 49 18 am" src="https://user-images.githubusercontent.com/35709830/37170019-8962def6-22be-11e8-817a-eb05e085ff63.png">
+
+First step successed. The light react the sound but it is not exactly what I want. The sensor is adjustable by hand so it is not excurate.
+
+So I start look for different sensor which has analog so it can sense different sound in music.
+I find another link it is helpful.
+http://www.instructables.com/id/Arduino-Vu-Meter-Using-a-Sound-Sensor/
+
+
+
 
 
 
