@@ -65,7 +65,12 @@ http://www.instructables.com/id/Arduino-Vu-Meter-Using-a-Sound-Sensor/
 Sound Sensor
 ![sound sensor](https://user-images.githubusercontent.com/35709830/37172313-479ee166-22c5-11e8-8b11-0015278d0eb2.jpg)
 
-I want to use 9 leds with different set of color.
+I want to use:
+ 9 leds with different set of color.
+ Sparkfun Sound Detector
 
+
+This is how it look like.
+![enlight88](https://user-images.githubusercontent.com/35709830/37172528-e3a51008-22c5-11e8-8ee7-a03c68305331.JPG)
 
 
