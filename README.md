@@ -68,6 +68,9 @@ Sound Sensor
 I want to use:
  * 9 leds with different set of color. 
  * Sparkfun Sound Detector
+ * 100Ω Resistor
+
+Here is the schematic
 
 
 This is how it look like.
