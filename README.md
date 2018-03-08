@@ -44,8 +44,8 @@ Reference:
 https://www.youtube.com/watch?v=nvPOUdz5PL4
 
 
-##Midterm Project: Led braclet
-###Concept: create a led braclet react to music
+## Midterm Project: Led braclet
+### Concept: create a led braclet react to music
 First I need a sound sensor and led to test when the sensor sence sound led can light up.
 
 Search online for resources. I find this video using Sound Sensor Detection Module LM393 Chip
