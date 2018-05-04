@@ -96,7 +96,7 @@ The next project I want to develop deeper based on current one. The concept not 
 ----------------------------------------------------------------------------------------
 
 # Futher development
-## Concept
+### Concept
 The idea is from Chameleon. Based on music visualization function of the bracelet, I futher develop it with a color change. When user touch someone, the bracelet will turn to the color that person wear. When I close to you, I will become same color as you.
 
 ### Parts for changing
