@@ -95,17 +95,17 @@ The next project I want to develop deeper based on current one. The concept not 
 
 ----------------------------------------------------------------------------------------
 
-### Futher development
+# Futher development
 ## Concept
 The idea is from Chameleon. Based on music visualization function of the bracelet, I futher develop it with a color change. When user touch someone, the bracelet will turn to the color that person wear. When I close to you, I will become same color as you.
 
-# parts for color change
+### Parts for changing
 - neopixel ring instead of led. First I tought about using rgb led, but each rgb led has four legs, it is difficult to control each of it in a large number. So I use neopixel ring which can allow me use code to control each of it, and only with one input pin.
 (picture)
 - color sensor: I use TCS34725 flora color sensor. The size of this sensor is small enough to make it fit into wearable device.
 (picture)
 
-# Step 1 sound
+### Step 1 sound
 Now I need to connect neopixel to sound sensor. Make it react to sound.
 First I found a project doing similar thing as I want. Here is the link: https://learn.adafruit.com/sound-reactive-neopixel-peace-pendant/overview
 But i find the code is too difficult to hack. So I start to try out myself using similar structure as the code I use for non rgb leds in the previous project.
@@ -113,18 +113,18 @@ But i find the code is too difficult to hack. So I start to try out myself using
 (video)
 (code)
 
-# Step 2 color
+### Step 2 color
 Now my device can react to music using the neopixel ring. The second step is to add color sensor to control the color.
 Use library of TCS34725, I find out the number of color sensor senses is different from rgb 255,255,255. So I am looking for a way to convert it to 255. Finally I find in the example there is a gamma table doing this job for you. I take this part to my code and finally make it work. 
 (schemetic)
 (video)
 (code)
 
-# prototype looking
+### Prototype looking
 (picture)
 (video)
 
-# Step 3 Design looking
+### Step 3 Design looking
 Final step is how to tranfer prototype to a bracelet. I designed a hexagon shape bracelet to best fit all these components into it. Use laser cut and buil up layer by layer.
 (laser cut picture)
 (build up pictures)
