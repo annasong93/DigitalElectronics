@@ -108,7 +108,8 @@ The idea is from Chameleon. Based on music visualization function of the bracele
 ### Step 1 sound
 Now I need to connect neopixel to sound sensor. Make it react to sound.
 First I found a project doing similar thing as I want. Here is the link: https://learn.adafruit.com/sound-reactive-neopixel-peace-pendant/overview
-But i find the code is too difficult to hack. So I start to try out myself using similar structure as the code I use for non rgb leds in the previous project.
+But i find the code is too difficult to hack. So I start to try out myself using similar structure as the code I use for non rgb leds in the previous project. 
+
 Schematic
 ![fritzing](https://user-images.githubusercontent.com/35709830/39659145-c47fcaf4-4fd6-11e8-9d68-8de37acadc3b.png)
 (video)
