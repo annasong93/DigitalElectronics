@@ -101,9 +101,10 @@ The idea is from Chameleon. Based on music visualization function of the bracele
 
 ### Parts for changing
 - neopixel ring instead of led. First I tought about using rgb led, but each rgb led has four legs, it is difficult to control each of it in a large number. So I use neopixel ring which can allow me use code to control each of it, and only with one input pin.
-(picture)
+![neopixel ring](https://user-images.githubusercontent.com/35709830/39659377-d8908858-4fdb-11e8-9b92-f1be8d62342f.jpg)
+
 - color sensor: I use TCS34725 flora color sensor. The size of this sensor is small enough to make it fit into wearable device.
-(picture)
+![color sensor](https://user-images.githubusercontent.com/35709830/39659373-cc070b02-4fdb-11e8-9b88-88e30beac234.jpg)
 
 ### Step 1 sound
 Now I need to connect neopixel to sound sensor. Make it react to sound.
