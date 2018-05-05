@@ -110,8 +110,30 @@ Now I need to connect neopixel to sound sensor. Make it react to sound.
 First I found a project doing similar thing as I want. Here is the link: https://learn.adafruit.com/sound-reactive-neopixel-peace-pendant/overview
 But i find the code is too difficult to hack. So I start to try out myself using similar structure as the code I use for non rgb leds in the previous project. 
 
-(video)
-(code)
+Code:
+
+if (n >= 10) {
+    pixels.setPixelColor(0, pixels.Color(r,g,b)); // Moderately bright green color.
+    pixels.setPixelColor(11, pixels.Color(r,g,b));
+
+
+    pixels.show(); // This sends the updated pixel color to the hardware.
+  }
+
+if (n >= 20) {
+    pixels.setPixelColor(1, pixels.Color(r,g,b)); // Moderately bright green color.
+    pixels.setPixelColor(10, pixels.Color(r,g,b));
+
+    pixels.show(); // This sends the updated pixel color to the hardware.
+  }
+
+if (n >= 30) {
+    pixels.setPixelColor(2, pixels.Color(r,g,b)); // Moderately bright green color.
+    pixels.setPixelColor(9, pixels.Color(r,g,b));
+
+    pixels.show(); // This sends the updated pixel color to the hardware.
+  }
+
 
 ### Step 2 color
 Now my device can react to music using the neopixel ring. The second step is to add color sensor to control the color.
@@ -123,7 +145,21 @@ Schematic
 Picture:
 
 
-(code)
+Code:
+
+  for (int i=0; i<256; i++) {
+    float x = i;
+    x /= 255;
+    x = pow(x, 2.5);
+    x *= 255;
+      
+    if (commonAnode) {
+      gammatable[i] = 255 - x;
+    } else {
+      gammatable[i] = x;      
+    }
+//    Serial.println(gammatable[i]);
+  }
 
 ### Prototype looking
 (picture)
