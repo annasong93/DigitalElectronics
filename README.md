@@ -110,16 +110,19 @@ Now I need to connect neopixel to sound sensor. Make it react to sound.
 First I found a project doing similar thing as I want. Here is the link: https://learn.adafruit.com/sound-reactive-neopixel-peace-pendant/overview
 But i find the code is too difficult to hack. So I start to try out myself using similar structure as the code I use for non rgb leds in the previous project. 
 
-Schematic
-![fritzing](https://user-images.githubusercontent.com/35709830/39659145-c47fcaf4-4fd6-11e8-9d68-8de37acadc3b.png)
 (video)
 (code)
 
 ### Step 2 color
 Now my device can react to music using the neopixel ring. The second step is to add color sensor to control the color.
 Use library of TCS34725, I find out the number of color sensor senses is different from rgb 255,255,255. So I am looking for a way to convert it to 255. Finally I find in the example there is a gamma table doing this job for you. I take this part to my code and finally make it work. 
-(schemetic)
-(video)
+
+Schematic
+![fritzing](https://user-images.githubusercontent.com/35709830/39659145-c47fcaf4-4fd6-11e8-9d68-8de37acadc3b.png)
+
+Picture:
+
+
 (code)
 
 ### Prototype looking
@@ -132,4 +135,5 @@ Final step is how to tranfer prototype to a bracelet. I designed a hexagon shape
 (build up pictures)
 (final shape inside details)
 (final looking outside)
-(video)
+Video:
+https://youtu.be/LSxFAGE9Q08
