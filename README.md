@@ -182,9 +182,182 @@ Build up:
 
 (final shape inside details)
 Final looking:
-![img_4007](https://user-images.githubusercontent.com/35709830/39659325-c0614f0c-4fda-11e8-86a0-b197940148ff.JPG)
 ![img_4013](https://user-images.githubusercontent.com/35709830/39659326-c39555b0-4fda-11e8-953a-bb3d32be7824.JPG)
-![img_4014](https://user-images.githubusercontent.com/35709830/39659327-c5d7dc26-4fda-11e8-90b5-42e15a973672.JPG)
 
 Video:
 https://youtu.be/LSxFAGE9Q08
+
+Code:
+
+    #include "Adafruit_TCS34725.h"
+    Adafruit_TCS34725 tcs = Adafruit_TCS34725(TCS34725_INTEGRATIONTIME_50MS, TCS34725_GAIN_1X);
+    #define commonAnode true
+    byte gammatable[256];
+
+    // NeoPixel Ring simple sketch (c) 2013 Shae Erisson
+    // released under the GPLv3 license to match the rest of the AdaFruit NeoPixel library
+
+    #include <Adafruit_NeoPixel.h>
+    #ifdef __AVR__
+    #include <avr/power.h>
+    #endif
+
+    // Which pin on the Arduino is connected to the NeoPixels?
+    // On a Trinket or Gemma we suggest changing this to 1
+    #define PIN            6
+
+    // How many NeoPixels are attached to the Arduino?
+    #define NUMPIXELS      12
+
+    #define MIC_PIN   A1
+
+    // When we setup the NeoPixel library, we tell it how many pixels, and which pin to use to send signals.
+    // Note that for older NeoPixel strips you might need to change the third parameter--see the strandtest
+    // example for more information on possible values.
+    Adafruit_NeoPixel pixels = Adafruit_NeoPixel(NUMPIXELS, PIN, NEO_GRB + NEO_KHZ800);
+
+    int delayval = 500; // delay for half a second
+
+    void setup() {
+      Serial.begin(9600);
+
+      // thanks PhilB for this gamma table!
+      // it helps convert RGB colors to what humans see
+      for (int i=0; i<256; i++) {
+        float x = i;
+        x /= 255;
+        x = pow(x, 2.5);
+        x *= 255;
+
+        if (commonAnode) {
+          gammatable[i] = 255 - x;
+        } else {
+          gammatable[i] = x;      
+        }
+    //    Serial.println(gammatable[i]);
+      }
+
+      // This is for Trinket 5V 16MHz, you can remove these three lines if you are not using a Trinket
+    #if defined (__AVR_ATtiny85__)
+      if (F_CPU == 16000000) clock_prescale_set(clock_div_1);
+    #endif
+      // End of trinket special code
+
+      pixels.begin(); // This initializes the NeoPixel library.
+    }
+
+    void loop() {
+      //color
+      uint16_t clearcol, red, green, blue;
+      float average, r, g, b;
+      delay(10); // Farbmessung dauert c. 50ms
+      tcs.getRawData(&red, &green, &blue, &clearcol);
+
+      uint32_t sum = clearcol;
+      r = red; r /= sum;
+      g = green; g /= sum;
+      b = blue; b /= sum;
+      r *= 256; g *= 256; b *= 256;
+
+          pixels.setPixelColor(0, pixels.Color(0,0,0));
+    //  
+    // Serial.println (PIN);
+
+
+      int n = analogRead(MIC_PIN);
+      // For a set of NeoPixels the first NeoPixel is 0, second is 1, all the way up to the count of pixels minus one.
+
+      //  for(int i=0;i<NUMPIXELS;i++){
+
+      // pixels.Color takes RGB values, from 0,0,0 up to 255,255,255
+      if (n >= 10) {
+        pixels.setPixelColor(0, pixels.Color(r,g,b)); // Moderately bright green color.
+        pixels.setPixelColor(11, pixels.Color(r,g,b));
+
+
+        pixels.show(); // This sends the updated pixel color to the hardware.
+      }
+
+    if (n >= 20) {
+        pixels.setPixelColor(1, pixels.Color(r,g,b)); // Moderately bright green color.
+        pixels.setPixelColor(10, pixels.Color(r,g,b));
+
+        pixels.show(); // This sends the updated pixel color to the hardware.
+      }
+
+    if (n >= 30) {
+        pixels.setPixelColor(2, pixels.Color(r,g,b)); // Moderately bright green color.
+        pixels.setPixelColor(9, pixels.Color(r,g,b));
+
+        pixels.show(); // This sends the updated pixel color to the hardware.
+      }
+
+    if (n >= 40) {
+        pixels.setPixelColor(3, pixels.Color(r,g,b)); // Moderately bright green color.
+        pixels.setPixelColor(8, pixels.Color(r,g,b));
+
+        pixels.show(); // This sends the updated pixel color to the hardware.
+      }
+
+      if (n >= 50) {
+        pixels.setPixelColor(4, pixels.Color(r,g,b)); // Moderately bright green color.
+        pixels.setPixelColor(7, pixels.Color(r,g,b));
+
+        pixels.show(); // This sends the updated pixel color to the hardware.
+      }
+
+      if (n >= 70) {
+        pixels.setPixelColor(5, pixels.Color(r,g,b)); // Moderately bright green color.
+        pixels.setPixelColor(6, pixels.Color(r,g,b));
+
+        pixels.show(); // This sends the updated pixel color to the hardware.
+      }
+
+        delay (50);
+      offAll();
+    //  if (n >= 90) {
+    //    pixels.setPixelColor(7, pixels.Color(r,g,b)); // Moderately bright green color.
+    //    pixels.setPixelColor(6, pixels.Color(r,g,b));
+    //
+    //    pixels.show(); // This sends the updated pixel color to the hardware.
+    //  }
+    //
+    //  if (n >= 110) {
+    //    pixels.setPixelColor(8, pixels.Color(r,g,b)); // Moderately bright green color.
+    //
+    //    pixels.show(); // This sends the updated pixel color to the hardware.
+    //  }
+    //
+    //  if (n >= 130) {
+    //    pixels.setPixelColor(9, pixels.Color(r,g,b)); // Moderately bright green color.
+    //
+    //    pixels.show(); // This sends the updated pixel color to the hardware.
+    //  }
+    //
+    //  if (n >= 150) {
+    //    pixels.setPixelColor(10, pixels.Color(r,g,b)); // Moderately bright green color.
+    //
+    //    pixels.show(); // This sends the updated pixel color to the hardware.
+    //  }
+    //
+    //  if (n >= 180) {
+    //    pixels.setPixelColor(11, pixels.Color(r,g,b)); // Moderately bright green color.
+    //
+    //    pixels.show(); // This sends the updated pixel color to the hardware.
+    //  }
+    //  if (n >= 200) {
+    //    pixels.setPixelColor(12, pixels.Color(r,g,b)); // Moderately bright green color.
+    //
+    //    pixels.show(); // This sends the updated pixel color to the hardware.
+    //  }
+
+
+    }
+
+    void offAll() {
+      for (int i = 0; i < NUMPIXELS; i++) {
+        pixels.setPixelColor(i, pixels.Color(0, 0, 0));
+      }
+    }
+
+
