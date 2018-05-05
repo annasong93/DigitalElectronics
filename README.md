@@ -112,27 +112,26 @@ But i find the code is too difficult to hack. So I start to try out myself using
 
 Code:
 
-if (n >= 10) {
-    pixels.setPixelColor(0, pixels.Color(r,g,b)); // Moderately bright green color.
-    pixels.setPixelColor(11, pixels.Color(r,g,b));
+    if (n >= 10) {
+        pixels.setPixelColor(0, pixels.Color(r,g,b)); // Moderately bright green color.
+        pixels.setPixelColor(11, pixels.Color(r,g,b));
+    
+        pixels.show(); // This sends the updated pixel color to the hardware.
+    }
 
+    if (n >= 20) {
+        pixels.setPixelColor(1, pixels.Color(r,g,b)); // Moderately bright green color.
+        pixels.setPixelColor(10, pixels.Color(r,g,b));
 
-    pixels.show(); // This sends the updated pixel color to the hardware.
-  }
+        pixels.show(); // This sends the updated pixel color to the hardware.
+    }
 
-if (n >= 20) {
-    pixels.setPixelColor(1, pixels.Color(r,g,b)); // Moderately bright green color.
-    pixels.setPixelColor(10, pixels.Color(r,g,b));
+    if (n >= 30) {
+        pixels.setPixelColor(2, pixels.Color(r,g,b)); // Moderately bright green color.
+        pixels.setPixelColor(9, pixels.Color(r,g,b));
 
-    pixels.show(); // This sends the updated pixel color to the hardware.
-  }
-
-if (n >= 30) {
-    pixels.setPixelColor(2, pixels.Color(r,g,b)); // Moderately bright green color.
-    pixels.setPixelColor(9, pixels.Color(r,g,b));
-
-    pixels.show(); // This sends the updated pixel color to the hardware.
-  }
+        pixels.show(); // This sends the updated pixel color to the hardware.
+    }
 
 
 ### Step 2 color
@@ -147,19 +146,17 @@ Picture:
 
 Code:
 
-  for (int i=0; i<256; i++) {
-    float x = i;
-    x /= 255;
-    x = pow(x, 2.5);
-    x *= 255;
-      
-    if (commonAnode) {
-      gammatable[i] = 255 - x;
-    } else {
-      gammatable[i] = x;      
+    for (int i=0; i<256; i++) {
+        float x = i;
+        x /= 255;
+        x = pow(x, 2.5);
+        x *= 255;
+        if (commonAnode) {
+          gammatable[i] = 255 - x;
+        } else {
+          gammatable[i] = x;      
+        }
     }
-//    Serial.println(gammatable[i]);
-  }
 
 ### Prototype looking
 (picture)
