@@ -142,7 +142,8 @@ Schematic
 ![fritzing](https://user-images.githubusercontent.com/35709830/39659145-c47fcaf4-4fd6-11e8-9d68-8de37acadc3b.png)
 
 Picture:
-
+![img_4024](https://user-images.githubusercontent.com/35709830/39659319-a20c2fd6-4fda-11e8-8ba6-4bac360b81f3.jpg)
+![img_4023](https://user-images.githubusercontent.com/35709830/39659321-a7240cdc-4fda-11e8-874a-446776099a3f.jpg)
 
 Code:
 
