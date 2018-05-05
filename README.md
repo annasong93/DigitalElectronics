@@ -159,8 +159,11 @@ Code:
     }
 
 ### Prototype looking
-(picture)
-(video)
+![asset 3](https://user-images.githubusercontent.com/35709830/39659338-0a9ad390-4fdb-11e8-840f-4adeece04359.png)
+![asset 2](https://user-images.githubusercontent.com/35709830/39659339-0c10a1b4-4fdb-11e8-9d07-665c00899258.png)
+
+Video:
+https://youtu.be/oyB8duCEraQ
 
 ### Step 3 Design looking
 Final step is how to tranfer prototype to a bracelet. I designed a hexagon shape bracelet to best fit all these components into it. Use laser cut and buil up layer by layer.
@@ -169,7 +172,7 @@ Sketch:
 ![img_3998](https://user-images.githubusercontent.com/35709830/39659318-99430ff0-4fda-11e8-89bc-90cb0dc9d244.jpg)
 
 Laser cut:
-
+![lasercuff](https://user-images.githubusercontent.com/35709830/39659405-420cf03c-4fdc-11e8-8a86-3ef08c77f641.jpg)
 
 Build up:
 ![img_4004](https://user-images.githubusercontent.com/35709830/39659330-d492652e-4fda-11e8-8f34-c9ff04014424.jpg)
