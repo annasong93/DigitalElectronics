@@ -164,9 +164,22 @@ Code:
 
 ### Step 3 Design looking
 Final step is how to tranfer prototype to a bracelet. I designed a hexagon shape bracelet to best fit all these components into it. Use laser cut and buil up layer by layer.
-(laser cut picture)
-(build up pictures)
+
+Sketch:
+![img_3998](https://user-images.githubusercontent.com/35709830/39659318-99430ff0-4fda-11e8-89bc-90cb0dc9d244.jpg)
+
+Laser cut:
+
+
+Build up:
+![img_4004](https://user-images.githubusercontent.com/35709830/39659330-d492652e-4fda-11e8-8f34-c9ff04014424.jpg)
+![img_4003](https://user-images.githubusercontent.com/35709830/39659331-d76e10e0-4fda-11e8-9a30-71061eaf74f3.jpg)
+
 (final shape inside details)
-(final looking outside)
+Final looking:
+![img_4007](https://user-images.githubusercontent.com/35709830/39659325-c0614f0c-4fda-11e8-86a0-b197940148ff.JPG)
+![img_4013](https://user-images.githubusercontent.com/35709830/39659326-c39555b0-4fda-11e8-953a-bb3d32be7824.JPG)
+![img_4014](https://user-images.githubusercontent.com/35709830/39659327-c5d7dc26-4fda-11e8-90b5-42e15a973672.JPG)
+
 Video:
 https://youtu.be/LSxFAGE9Q08
